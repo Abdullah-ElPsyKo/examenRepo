@@ -3,14 +3,15 @@ on:
     branches:
       - main
 
+
 jobs:
-  visualizer:
-    name: visualises
+  my_first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Repo Visualizer
-      - uses: githubocto/repo-visualizer@0.9.1
-      - with:
-          branch: "main"
-          artifact_name: "diagram"
-
+      - name: Checkout code
+        uses: actions/checkout@main
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@0.9.1
+        with:
+          output_file: "images/diagram.svg"
+          excluded_paths: "dist,node_modules"
