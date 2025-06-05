@@ -7,7 +7,7 @@ permissions: write-all
 
 jobs:
   my_first_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@main
