@@ -2,7 +2,8 @@ on:
   push:
     branches:
       - main
-
+      
+permissions: write-all
 
 jobs:
   my_first_job:
