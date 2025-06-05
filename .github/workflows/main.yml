@@ -18,7 +18,7 @@ jobs:
           output_file: "output-diagram.svg"
           artifact_name: "my-diagram"
       - name: Get artifact
-        uses: actions/download-artifact@v3
+        uses: download-artifact@v4.3.0
         with:
           name: "diagram"
           path: "downloads"
