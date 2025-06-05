@@ -5,9 +5,12 @@ on:
 
 jobs:
   visualizer:
-    name: Repo Visualizer
-    uses: githubocto/repo-visualizer@0.9.1
-    with:
-      branch: "main"
-      artifact_name: "diagram"
+    name: visualises
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo Visualizer
+      - uses: githubocto/repo-visualizer@0.9.1
+      - with:
+          branch: "main"
+          artifact_name: "diagram"
 
