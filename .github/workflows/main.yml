@@ -15,3 +15,4 @@ jobs:
         uses: githubocto/repo-visualizer@0.9.1
         with:
           output_file: "images/diagram.svg"
+          artifact_name: diagram
